@@ -1,4 +1,6 @@
-# chatGPT-Clone-v1.0
+<h2 align="center">
+  ChatGPT Clone v1.0 • 🤖
+</h2>
 
 chatGPT integration with Node and React.
 

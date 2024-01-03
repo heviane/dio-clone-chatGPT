@@ -9,6 +9,7 @@ module.exports = {
         try{
             const response = await openaiAPI.createCompletion(
                 openai.textCompletion(inputModel)
+                // openai.textCompletion("What is the chatGPT?")
             )
             return res.status(200).json({
                 sucess: true,
