@@ -1,0 +1,48 @@
+/* 
+    Reset style sheet
+
+    A reset stylesheet is a collection of CSS rules used to clear the browser's 
+    default formatting of HTML elements, removing potential inconsistencies 
+    between different browsers. 
+
+    Example: https://meyerweb.com/eric/tools/css/reset/ 
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  
+    font-family: helvetica;
+  }
+  
+  *,
+  *::before,
+  *::after {
+      -webkit-box-sizing: inherit;
+          -moz-box-sizing: inherit;
+              box-sizing: inherit;
+  }
+  
+  // alinhamento que pode vir antes ou depois de outro
+  *, *:before, *:after {
+    box-sizing: inherit; /* herdar do elemento pai */
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
