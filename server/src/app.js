@@ -1,16 +1,15 @@
 // App that will be served on the server
-// App express que usa JSON e tem o controle do cors
+// Express app that uses JSON and has cors control
 const express = require("express")
-const cors = require("cors")
+const cors = require("cors");
 const routes = require("./routes/routes");
 
 require("dotenv").config()
 
-// Express instance
-const app = express()
+const app = express() // Express instance
 
-app.use(express.json()) // configurado formato json
-app.use(cors()) // sem nenhuma config especifica, sem trava de acesso
-app.use(routes) // usar as rotas criadas
+app.use(express.json()) 
+app.use(cors()) // without any specific config, without access lock
+app.use(routes)         
 
 module.exports = app

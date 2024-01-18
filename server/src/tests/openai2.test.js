@@ -1,8 +1,9 @@
-import OpenAIAPI from "openai";
-import dotenv from 'dotenv'; 
+const { OpenAI } = require("openai");
+const dotenv = require("dotenv");
+
 dotenv.config();
 
-const openai = new OpenAIAPI({apiKey: process.env.OPEN_AI_KEY})
+const openai = new OpenAI({apiKey: process.env.OPEN_AI_KEY})
 
 async function main() {
   try {
@@ -17,3 +18,6 @@ async function main() {
 }
 
 main();
+
+// cd server
+// node src/tests/openai-test.js

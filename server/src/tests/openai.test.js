@@ -1,5 +1,6 @@
-import { OpenAI } from "openai";
-import dotenv from 'dotenv'; // npm install dotenv
+const { OpenAI } = require("openai");
+const dotenv = require("dotenv");
+
 dotenv.config();
 
 const openai = new OpenAI({apiKey: process.env.OPEN_AI_KEY})
@@ -16,22 +17,35 @@ async function main() {
     console.error(error);
   }
 }
+
 main();
 
 /* 
-  ------------------------ ERRORS
-    - OpenAIError: The OPENAI_API_KEY environment variable is missing or empty; 
-    either provide it, or instantiate the OpenAI client with an apiKey option, 
-    like new OpenAI({ apiKey: 'My API Key' }).
+  cd server
+  node src/tests/openai.test.js
 
-      *** CORREÇÃO: Executar de dentro do diretório server, senão ERROR acima.
-      cd server
-      node src/tests/openai-test.js
-
-    - RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. 
-      For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors
+  
+  - ERROR
+    *** RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. 
+    For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors
+      
       type: insufficient_quota
       status: 429
+      Cause: 
+        - You have run out of credits or hit your maximum monthly spend.
+      Solution: 
+        - Buy more credits (https://platform.openai.com/account/billing) 
+        or 
+        - Learn how to increase your limits (https://platform.openai.com/account/limits)
+        
+        *** Criei uma conta nova ***
 
-      *** CORREÇÃO: ????
+    *** BadRequestError: 400 'messages' is a required property
+      In "openai2.test.js" return:
+        {
+          index: 0,
+          message: { role: 'assistant', content: 'How can I assist you today?' },
+          logprobs: null,
+          finish_reason: 'stop'
+        }
 */

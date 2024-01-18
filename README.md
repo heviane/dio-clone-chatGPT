@@ -9,7 +9,7 @@ chatGPT integration with Node and React.
 ### Back-end
 
 - Javascript
-- Node
+- Node (v17.7.1)
 - Express
 - Cors
 

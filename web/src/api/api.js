@@ -1,9 +1,9 @@
 import axios from 'axios';
 const URL_API = "http://localhost:5555/api/prompt";
 
-// function assincrona que sempre recebe uma mensagem (enviada pelo usuário) de acordo com o model
+// async function always receives message (from the user) according to the model
 export const makeRequest = async(message) => {
-    // data (via desestruturação) que vem de dentro do axios
+    // destructuring the "data" variable
     const {data} = await axios.post(URL_API, message)
     return data
 } 
