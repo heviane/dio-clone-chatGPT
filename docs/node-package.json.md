@@ -1,8 +1,12 @@
 # Getting Started with Node
 
+## Configuration: Create a `package.json` file
+
+If you don't already have one, create a `package.json` file in your project's root directory. You can do this by running `npm init` and following the prompts.
+
 ## Configuration
 
-The "**package.json**" file is a manifest file used in **Node.js** projects. 
+The "**package.json**" file is a manifest file used in **Node.js** projects.
 It contains information about the project, its dependencies, execution scripts, metadata, and other important settings.
 
 ## Configuration "scripts" (for execution)
