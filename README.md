@@ -38,6 +38,7 @@ npm start
 ## Pendencies
 
 [ ] Deploy in Heroku or Vercel
+
 [ ] Create Tests
 
 🔥
