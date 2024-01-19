@@ -24,8 +24,8 @@ main();
   cd server
   node src/tests/openai.test.js
 
-  
   - ERROR
+  
     *** RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. 
     For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors
       
@@ -42,10 +42,13 @@ main();
 
     *** BadRequestError: 400 'messages' is a required property
       In "openai2.test.js" return:
-        {
-          index: 0,
-          message: { role: 'assistant', content: 'How can I assist you today?' },
-          logprobs: null,
-          finish_reason: 'stop'
-        }
+        error: {
+          message: "'messages' is a required property",
+          type: 'invalid_request_error',
+          param: null,
+          code: null
+        },
+        code: null,
+        param: null,
+        type: 'invalid_request_error'
 */
