@@ -4,11 +4,12 @@
 
 const express = require("express");
 const promptControlller = require("../controllers/prompt-controller");
-
-// create instance of routes from within express
-// returns a route tree, we can hang routes here
 const routes = express.Router();
 
 routes.post('api/prompt', promptControlller.sendText);
 
-module.exports = routes; // export the route tree
+module.exports = routes; 
+
+// testar disponibilidade
+// telnet endereço_do_servidor porta
+

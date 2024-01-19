@@ -6,7 +6,7 @@ const app = require("./app")
 const port = process.env.PORT || 3000 
 
 app.listen(port, () => (
-  console.log(`Server listening on port ${port}`)  
+  console.log(`Server listening on port ${port} `)  
 ))
 
 // ---------- 
@@ -15,4 +15,4 @@ app.listen(port, () => (
 
 // ---------- script in package.json
 // cd server
-// npm start
+// npm run start

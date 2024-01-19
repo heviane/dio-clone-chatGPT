@@ -1,4 +1,4 @@
-// modelo de como usuário vai enviar as informações
+// How the user should submit information
 
 class InputPrompt {
     constructor({prompt}){

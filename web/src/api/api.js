@@ -5,8 +5,6 @@ const URL_API = "http://localhost:5555/api/prompt";
 export const makeRequest = async(message) => {
 
     console.log('message: ' + message);
-
-    // destructuring the "data" variable
     const {data} = await axios.post(URL_API, message);
     console.log('data: ' + data);
     return data

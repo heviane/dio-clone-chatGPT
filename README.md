@@ -19,15 +19,13 @@ chatGPT integration with Node and React.
 - React
 - Axios
 
-### How to run the service from the backend?
+### How to run the back-end service?
 
 ```sh
 cd server
 npm install
 npm start
 ```
-
-The backend service must be running on port :5000.
 
 ### How to run the front-end service?
 
@@ -36,5 +34,10 @@ cd web
 npm install
 npm start
 ```
+
+## Pendencies
+
+[ ] Deploy in Heroku or Vercel
+[ ] Create Tests
 
 🔥

@@ -2,7 +2,7 @@ import React from 'react';
 import './SideMenu.css';
 
 // functional component
-export const SideMenu = () => {
+const SideMenu = () => {
     return (
         <aside className='sidemenu'> 
             <div className='sidemenu-button'>
@@ -12,5 +12,7 @@ export const SideMenu = () => {
         </aside>
     )
 }
+
+export default SideMenu;
 
 /* aside (a parte, de lado) = uma div lateral */

@@ -8,8 +8,12 @@ import {useState} from 'react';
 import './styles/App.css';
 import './styles/reset.css';
 import {makeRequest} from './api/api';
-import {SideMenu} from './components/SideMenu/SideMenu';
-import {ChatMessage} from './components/ChatMessage/ChatMessage'; 
+
+// Erro compilação ao modificar "export" p/ "export default", removi desedtruturação
+// import {SideMenu} from './components/SideMenu/SideMenu';
+// import {ChatMessage} from './components/ChatMessage/ChatMessage'; 
+import SideMenu from './components/SideMenu/SideMenu'
+import ChatMessage from './components/ChatMessage/ChatMessage'
 
 function App() {
 
