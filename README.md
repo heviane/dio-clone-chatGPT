@@ -35,10 +35,8 @@ npm install
 npm start
 ```
 
-## Pendencies
+## References
 
-[ ] Deploy in Heroku or Vercel
-
-[ ] Create Tests
+[https://github.com/felipeAguiarCode/node-react-chatgpt-clone](https://github.com/felipeAguiarCode/node-react-chatgpt-clone)
 
 🔥
