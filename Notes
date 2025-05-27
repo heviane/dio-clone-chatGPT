@@ -1,0 +1,60 @@
+# Guide
+
+## Requisites
+
+- Node v18.11.0
+
+## Integrações
+
+- [platform.openai.com/](https://platform.openai.com/)
+
+## Estrutura do Projeto
+
+- Backend
+Directory: server => Arquivos de configurações
+Directory: server/src => Código fonte
+
+- Frontend
+
+## Node Project
+
+Para entrar no backend:
+
+```bash
+    cd server
+```
+
+Para inicializar um projeto Node sem fazer perguntas:
+
+```bash
+    npm init -y
+```
+
+Para instalar as pependências de um projeto novo:
+
+- cors
+- dotenv
+- express
+- openai
+
+```bash
+    npm i cors dotenv express openai
+```
+
+Para instalar as dependências de um projeto pré-existente de acordo com o especificado em "package.json": 
+
+```bash
+    npm install
+```
+
+OU
+
+```bash
+    npm ci
+```
+
+Este último é o comando recomendado para ambientes de produção e CI/CD, pois instala exatamente o que está em package-lock.json, ignorando package.json se houver divergência.
+
+Resumo:
+    npm install → usa package.json (e package-lock.json se presente).
+    npm ci → usa somente package-lock.json, ideal para consistência total.

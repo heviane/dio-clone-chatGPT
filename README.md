@@ -37,6 +37,8 @@ npm start
 
 ## References
 
-[https://github.com/felipeAguiarCode/node-react-chatgpt-clone](https://github.com/felipeAguiarCode/node-react-chatgpt-clone)
+- [github.com/felipeAguiarCode/node-react-chatgpt-clone](https://github.com/felipeAguiarCode/node-react-chatgpt-clone)
+
+- [openai.com/api/](https://openai.com/api/)
 
 🔥

@@ -1,18 +1,21 @@
 const app = require("./app")
 
-// "process" is the current process that is running
-// "env" is the "dotenv" configuration file
-
 const port = process.env.PORT || 3000 
 
 app.listen(port, () => (
   console.log(`Server listening on port ${port} `)  
 ))
 
-// ---------- 
+// ---------- Inicializar o servidor (não reinicia automaticamente em alterações)
 // cd server
 // node src/server.js
 
-// ---------- script in package.json
+// ---------- Inicializar em modo watch (reinicia automaticamente em alterações)
+// cd server
+// node --watch src/server.js
+
+// ---------- Inicializar o servidor com nodemon (reinicia automaticamente em alterações)
+// ---------- script in package.json com nodemon
 // cd server
 // npm run start
+
